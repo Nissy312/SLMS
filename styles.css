@@ -1,0 +1,329 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Soft gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #005f73; /* Dark teal like D2L */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #48a9e6; /* Soft blue for hover effect */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007f7f; /* Calming green-blue tone */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 30px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #f0a500; /* Bold yellow for call to action */
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e08500; /* Darker shade of yellow */
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+/* Dashboard specific styles */
+.dashboard {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dashboard h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.user-details p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.actions a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #f0a500;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.actions a:hover {
+    background-color: #e08500;
+}
+/* Course Page Grid Layout */
+.courses {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.courses h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.course-card h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.course-card p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.course-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.course-enrollment {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f0a500; /* Yellow color for the comment bubble */
+}
+
+.comment-icon {
+    margin-left: 5px;
+}
+
+/* Hover effect */
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* Settings Page Styles */
+.settings {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.settings h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.settings .form-group {
+    margin-bottom: 20px;
+}
+
+.settings label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.settings input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.settings button {
+    padding: 12px 20px;
+    background-color: #f0a500;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.settings button:hover {
+    background-color: #e08500;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (Desktop) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .hero h2 {
+        font-size: 3rem; /* Adjust font size for large screens */
+    }
+}
+
+/* Medium screens (Tablets) */
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem; /* Adjust font size for tablets */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr 1fr; /* Two-column layout for tablets */
+    }
+}
+
+/* Small screens (Mobile phones) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .hero h2 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .course-list {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack courses in a single column */
+    }
+
+    .cta-btn {
+        width: 100%; /* Make the button full-width on mobile */
+    }
+}
+
